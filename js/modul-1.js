@@ -101,3 +101,177 @@ console.log(2 ** 3);
 // console.log(color);
 
 // document.body.style.backgroundColor = color;
+
+// const quantity = 15;
+// const orderMsg = "вы заказываете ${quantity} холодильников";
+
+// console.log(orderMsg);
+
+
+// нормалізували- привели всі літери до одного виду, для зручного пошуку
+// const brand = Samung;
+// brand = brand.toLowerCase();
+
+// console.log(brand);
+
+// метод slice(x) - виведе все після значення Х
+
+// let brand = 'saMSunG';
+// console.log(brand[4]);
+// console.log(brand.slice(1).toLowerCase());
+
+// brand = brand[0] + brand.slice(1).toLowerCase();
+
+// console.log(brand);
+
+
+// пошук в рядку
+
+// const blackListWord1 = 'Спам';
+// const blackListWord2 = 'распродажа';
+
+// const string1 = 'Привае,я принц, я не спам';
+// const string2 = 'Самая большая РАСПРДАЖА в мае';
+// const string3 = 'Рекламная кампания';
+
+// console.log(string1.includes(blackListWord1));
+// console.log(string1.includes(blackListWord2));
+
+// console.log(string2.includes(blackListWord1));
+// console.log(string2.toLowerCase().includes(blackListWord2));
+
+// console.log(string3.includes(blackListWord1));
+// console.log(string3.includes(blackListWord2));
+
+// ЧИСЛА - рівність і нерівність
+// const isEqual = 1 === true; - строго равно
+// const isEqual = 0 !== false; - строго не равно
+
+
+
+// Boolean-приведение к булю
+// console.log(Boolean(0));
+
+// логічне І = && -  приводить до true
+//  console.log(5 && 6 && 'true');- виводить Falce фбо отсаннє значення
+
+// console.log(9 && 36 && 54 && 0 && -23 && 'true') - виведе 0 бо це false
+
+// логічне або -- якщо жодне значення не приводиться до правди, то вертає останнє значення
+// console.log(5 || 10 || 56); -виведе 5
+
+// логічне НЕ - все, що не fasle, приводить до true і навпаки
+// console.log(!0); - true
+// console.log(!0); - false
+
+const x1 = 10;
+const x2 = 30;
+const number = 50;
+
+console.log('Число ${number} попадает в отрезок до ${x1}?' , number < x1);
+
+console.log('Число ${number} попадает в отрезок от ${x2}?' , number > x2);
+
+const res1 = number > x1 && number < x2;
+// number1 > x1 && number < x2
+// 50 > 10 && 50 < 30
+// true    && false
+// false - ответ
+
+// number1 > x1 && number < x2
+// 5 > 10 && 5 < 30
+// false   && true
+// false - ответ
+
+// number1 > x1 && number < x2
+// 15 > 10 && 15 < 30
+// true    && true
+// true - ответ
+
+console.log('Число ${number} попадает в отрезок от ${x1} до ${x2}?' , res1);
+
+const res2 = number < x1 || number > x2;
+// number1 < x1 && number > x2
+// 150 < 10 && 150 > 30
+// false    && true
+// true - ответ - операнд або вертає true
+
+
+const isOnline = true;
+const isFriend = true;
+const isDnd = false;
+
+// const canOpenChat = isOnline && isFriend && !isDnd; - могу откріть чат
+console.log('Можно отркить чат?' , canOpenChat);
+
+
+
+const subscription =  'pro';
+
+const canAccessContent = subscription === 'pro' || subscription === 'vip';
+console.log('Усть доступ к контенту' , canAccessContent);
+
+
+
+// IF
+// if() {
+// // тело
+// console.log('qeyeyey');
+// }
+
+// console.log( 'дальше');
+
+
+
+// if (50 < 60) {
+//     console.log('x > Y');
+// }
+// else {
+//     console.log( 'x < y');
+// }
+// console.log('');
+
+
+// const salary = 1000;
+
+// if (salary < 500) {
+//     console.log('level 1');
+// } else if(salary > 500 && salary < 1500) {
+//     consolele.log('level 2');
+// } else if(salary > 1500 && salary < 3000) {
+//     consolele.log('level 3');
+// } else { consolele.log('level N'); 
+
+// }
+   
+
+// Тернарний оператор
+
+const balance = 1000;
+let message;
+
+if (balance >= 0) {
+    message = 'good';
+}
+else {
+    message = 'not good';
+}
+
+
+// все, що вище можна записати так:
+
+// const message = условие ? віражение1 : віражение2;
+
+// console.log (message);
+
+const message = balance >=0 ? 'good' : 'not good';
+
+console.log (message);
+
+
+// блочная область видимости переменніх-- буде видно тільки внутри скобок {}
+if (true) {
+    const a = 5;
+
+    console.log(a);
+}
