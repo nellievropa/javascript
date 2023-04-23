@@ -1,13 +1,13 @@
-'use strict'
+// 'use strict'
 
-const totalPrice = 200.74;
+// const totalPrice = 200.74;
 
 
 
-console.log('price:', totalPrice);
+// console.log('price:', totalPrice);
 
-const type = typeof true;
-console.log(type);
+// const type = typeof true;
+// console.log(type);
 
 // console.log('before');
 // alert('wywywyw');
@@ -31,7 +31,7 @@ console.log(type);
 // elementHeight = Number.parseFloat(elementHeight);
 // console.log('elementHeight:', elementHeight);
 
-let salary = 1425.2365478;
+// let salary = 1425.2365478;
 // єто 2 строки
 // salary = salary.toFixed(2);
 // salary = Number(salary);
@@ -55,7 +55,7 @@ let salary = 1425.2365478;
 // const result = Math.pow(base, power);
 
 // или тоже
-console.log(2 ** 3);
+// console.log(2 ** 3);
 
 // const result = Math.pow(2, 4);
 
@@ -164,15 +164,16 @@ console.log(2 ** 3);
 // console.log(!0); - true
 // console.log(!0); - false
 
-const x1 = 10;
-const x2 = 30;
-const number = 50;
+// const x1 = 10;
+// const x2 = 30;
+// const number = 50;
 
-console.log('Число ${number} попадает в отрезок до ${x1}?' , number < x1);
+// console.log('Число ${number} попадает в отрезок до ${x1}?' , number < x1);
 
-console.log('Число ${number} попадает в отрезок от ${x2}?' , number > x2);
+// console.log('Число ${number} попадает в отрезок от ${x2}?' , number > x2);
 
-const res1 = number > x1 && number < x2;
+// const res1 = number > x1 && number < x2;
+
 // number1 > x1 && number < x2
 // 50 > 10 && 50 < 30
 // true    && false
@@ -188,28 +189,28 @@ const res1 = number > x1 && number < x2;
 // true    && true
 // true - ответ
 
-console.log('Число ${number} попадает в отрезок от ${x1} до ${x2}?' , res1);
+// console.log('Число ${number} попадает в отрезок от ${x1} до ${x2}?' , res1);
 
-const res2 = number < x1 || number > x2;
+// const res2 = number < x1 || number > x2;
 // number1 < x1 && number > x2
 // 150 < 10 && 150 > 30
 // false    && true
 // true - ответ - операнд або вертає true
 
 
-const isOnline = true;
-const isFriend = true;
-const isDnd = false;
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
 
-// const canOpenChat = isOnline && isFriend && !isDnd; - могу откріть чат
-console.log('Можно отркить чат?' , canOpenChat);
+// // const canOpenChat = isOnline && isFriend && !isDnd; - могу откріть чат
+// console.log('Можно отркить чат?' , canOpenChat);
 
 
 
-const subscription =  'pro';
+// const subscription =  'pro';
 
-const canAccessContent = subscription === 'pro' || subscription === 'vip';
-console.log('Усть доступ к контенту' , canAccessContent);
+// const canAccessContent = subscription === 'pro' || subscription === 'vip';
+// console.log('Усть доступ к контенту' , canAccessContent);
 
 
 
@@ -240,22 +241,22 @@ console.log('Усть доступ к контенту' , canAccessContent);
 //     consolele.log('level 2');
 // } else if(salary > 1500 && salary < 3000) {
 //     consolele.log('level 3');
-// } else { consolele.log('level N'); 
+// } else { consolele.log('level N');
 
 // }
    
 
 // Тернарний оператор
 
-const balance = 1000;
-let message;
+// const balance = 1000;
+// let message;
 
-if (balance >= 0) {
-    message = 'good';
-}
-else {
-    message = 'not good';
-}
+// if (balance >= 0) {
+//     message = 'good';
+// }
+// else {
+//     message = 'not good';
+// }
 
 
 // все, що вище можна записати так:
@@ -264,14 +265,145 @@ else {
 
 // console.log (message);
 
-const message = balance >=0 ? 'good' : 'not good';
+// const message = balance >=0 ? 'good' : 'not good';
 
-console.log (message);
+// console.log (message);
 
 
 // блочная область видимости переменніх-- буде видно тільки внутри скобок {}
-if (true) {
-    const a = 5;
+// if (true) {
+//     const a = 5;
 
-    console.log(a);
+//     console.log(a);
+// }
+
+// вибрати номер за зіркою і ціною
+
+// const star = 8;
+// let price;
+
+// if (star === 1) {
+//     price = 20;
+// }
+// else if (star === 2) {
+//     price = 30;
+// }
+// else if (star === 3) {
+//     price = 40;
+// }
+// else if (star === 4) {
+//     price = 70;
+// }
+// else if (star === 5) {
+//     price = 120;
+// }
+// else {
+//     console.log('Такого числа звезд нет');
+// }
+// console.log(price);
+
+// все, что выще можно записать через свитч
+
+// const star = 1;
+// let price;
+
+// switch (star) {
+//     case 1:
+//         price = 20;
+//         console.log('одина ночь стоит 20$');
+//         break;
+//     case 2:
+//         price = 30;
+//         break;
+//     case 3:
+//         price = 50;
+//         break;
+//     case 4:
+//         price = 70;
+//         break;
+//     case 5:
+//         price = 120;
+//         break;
+//     default:
+//         console.log('Такого числа звезд нет');
+// }
+
+// console.log(price);
+
+// если 1 и 2 звезді стоят 20, 3 и 4 звезді стоят 30, а 5 - 120, то пишется так:
+
+// const star = 4;
+// let price;
+
+// if (star === 1 || star === 2) {
+//     price = 20;
+// }
+// else if (star === 3 || star === 4) {
+//     price = 30;
+// }
+
+// else if (star === 5) {
+//     price = 120;
+// }
+// else {
+//     console.log('Такого числа звезд нет');
+// }
+// console.log(price);
+
+// со свич єто будет віглядеть так:
+
+// const star = 5;
+// let price;
+
+// switch (star) {
+//     case 1:
+//         case 2:
+//         price = 20;
+//         console.log('одина ночь стоит 20$');
+//         break;
+//     case 3:
+//         case 4:
+//         price = 30;
+//         break;
+//     case 5:
+//         price = 120;
+//         break;
+//     default:
+//         console.log('Такого числа звезд нет');
+// }
+
+// console.log(price);
+
+//  для решения задач пишем себе план :
+// 1. создать переменніе
+// const option = 6;
+// let message = '';
+
+// 2. написать cвитч
+// 3. в каждом кейсе записать месседж
+// switch (option) {
+//     case 1:
+//         message = 'ви можете забрать товар в нашем офисе завтра';
+//         break;
+//      case 2:
+//         message = 'курьер доставит товар вам с 12:00 до 18:00';
+//         break;
+//      case 3:
+//         message = 'посылка будет отправлена сегодня, получите на почте';
+//         break;
+    
+//     default:
+//      message = 'вам перезвонит наш менеджер';
+// }
+
+// 4. вивести лог (месседж)
+
+// console.log(message);
+
+
+// FOR - циклі
+
+for (let i = 49; i >= 0; i -= 3) {
+    console.log(i);
 }
+console.log('qwewewwe');
