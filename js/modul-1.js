@@ -401,9 +401,59 @@
 // console.log(message);
 
 
-// FOR - циклі
+// FOR - циклі  i = i + 3 которотк пишеться так i += 3
 
-for (let i = 49; i >= 0; i -= 3) {
+// for (let i = 49; i >= 0; i -= 3) {
+//     console.log(i);
+// }
+// console.log('qwewewwe');
+
+
+// посчитать сумму з/п для какого-то числа рабочих со случайнім значением з/п
+// 1. сделать вари
+// const minSalary = 300;
+// const maxSalary = 6000;
+// const employees = 15;
+// let totalSalary = 0;
+
+// 2. перебрать работков в цикле
+// for (let i = 1; i <= employees; i += 1) {
+    // 3. сгенерить случайную з / п и приплюсовать к тоталу
+    // const salary = Math.round(
+    //     Math.random() * (maxSalary - minSalary) + minSalary,
+    // );
+    // console.log(`ЗП працівника номер ${i} - ${salary}`);
+// 4. прибавить к общей сумме
+//     totalSalary += salary;
+    
+// }
+// 5. вивести лог
+// console.log(`total salary:`, totalSalary);
+
+
+//  2-га задача на цикли: посчитать сумму четных чисел в определенном отрезке
+
+// 1.объявить переменные
+// 2.создаем цикл
+  // 3.проверить на четность методом остаток от деления !!! (а % b);  
+  // 4.считаем сумму
+const min = 3;
+const max = 9;
+let total = 0;
+
+for (let i = min; i <= max; i += 1) {
     console.log(i);
+ 
+    if (i % 2 !== 0) {
+        console.log(`нечетное: `, i);
+        continue;
+    }
+        console.log(`четное: `, i);
+
+        total += i;
 }
-console.log('qwewewwe');
+console.log(`total: `, total);
+
+
+
+
