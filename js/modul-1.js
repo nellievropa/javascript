@@ -437,23 +437,87 @@
 // 2.создаем цикл
   // 3.проверить на четность методом остаток от деления !!! (а % b);  
   // 4.считаем сумму
-const min = 3;
-const max = 9;
+// const min = 3;
+// const max = 9;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//     // перевіряєм, що не четное  
+//     if (i % 2 !== 0) {
+//         // console.log(`нечетное: `, i);
+//         continue;
+//     }
+//         console.log(`четное: `, i);
+
+//         total += i;
+// }
+// console.log(`total: `, total);
+
+
+
+// скрипт обработки покупки в магазине
+// 1 Вары задали переменные
+// let balance = 10000;
+// const payment = 23000;
+
+// // условие: если сумма не превышает баланс : payment <=  balance
+
+// console.log(`Общая стоимость заказа ${payment} кредитов. Проверяем количество доступных средств на счету`);
+//  if ( balance >= payment) {
+//     console.log (`Ok`);
+
+//     balance -= payment;
+//     // balance = balance - payment;
+
+//     console.log(`Все хорошо, снимаем деньги.. Спасибо за покупку`);
+//     console.log(`На счету осталось ${balance} кредитов `);
+//  } else {
+//     console.log(`На счету недостаточно средств`);
+//  }
+//  console.log(`Операция завершена`);
+
+
+// Подсчитіваем покупку со скидкой [-квадратніе скобки значат, что число включено в отрезок] 
+// задаем переменные
+let totalSpent = 3523;
+let payment = 3260;
+let discount = 0;
+
+// перевыряем промежутки
+//  if (totalSpent >= 100 && totalSpent < 1000) {
+//     console.log(` Бронзовый партнер, скидка 2%`);
+//     discount = 0.02;
+// }else if (totalSpent >= 1000 && totalSpent < 5000) {
+//     console.log(`Серебрянный партнер, скидка 5%`);
+//     discount = 0.05;
+// }else if (totalSpent >= 5000){
+//     console.log(`Золотой партнер, скидка 10%`);
+//     discount = 0.1;
+// }else {
+//     console.log (`У вас нет партнерской скидки`);
+// }
+
+// // payment = payment - payment * discount; теж саме нижче
+// payment -= payment * discount;
+
+// console.log(`Оформляем заказ на суму ${payment} со скидкой ${discount * 100}%`);
+
+// totalSpent += payment;
+
+// console.log(`Общая сумма потраченная в магазине ${totalSpent}`);
+
+const btnAdd = document.querySelector(`button[data-add]`);
+const valueInput = document.querySelector('input[data-velue]');
+
 let total = 0;
+// console.dir(btnAdd.textContent)
+btnAdd.addEventListener('click', function () {
+    console.log('click');
+    const value = Number(valueInput.value);
 
-for (let i = min; i <= max; i += 1) {
-    console.log(i);
- 
-    if (i % 2 !== 0) {
-        console.log(`нечетное: `, i);
-        continue;
-    }
-        console.log(`четное: `, i);
-
-        total += i;
-}
-console.log(`total: `, total);
-
-
-
-
+    console.log(value);
+    total += value;
+    console.log(`total: `, total);
+// щоб обнулити результаті у віконці
+    valueInput.value='';
+})
